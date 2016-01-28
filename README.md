@@ -6,7 +6,7 @@ Ideas about frontend tech and design
 
 Display search results (10 at a time under the search box) as you type in a fast and efficient manner.
 
-*A basic strategy*
+**A basic strategy**
 * on keyup, send the query term to the search engine, get results, display results
 
 Some potential issues
@@ -14,7 +14,7 @@ Some potential issues
 * request roundtrips may be "slow"
 * asynchronous requests may come back out of order
 
-*Some possible optimizations*
+**Some possible optimizations**
 * on page load, prefetch search results (data-size: 26 x 10)
 * to reduce load, throttle requests (e.g. 100ms) to make request rate per client more predictable
 * "ignore" async requests made earlier than the "last" request
@@ -22,10 +22,10 @@ Some potential issues
 * on the server, store top results in a fast key/value LRU cache
 * use socket.io for realtime push
 
-*domain specific optimizations*
+**domain specific optimizations**
 * for a general search engine, cache known/top/popular searches from other people
 
-*personalization*
+**personalization**
 * for a logged in user, predictive search results can be ranked based on a user's search history
 
 ## UI design language
