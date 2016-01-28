@@ -9,7 +9,7 @@ Display search results (10 at a time under the search box) as you type in a fast
 **A basic strategy**
 * on keyup, send the query term to the search engine, get results, display results
 
-Some potential issues
+**Some potential issues**
 * Fast typing by many concurrent users will add load on the search server
 * request roundtrips may be "slow"
 * asynchronous requests may come back out of order
