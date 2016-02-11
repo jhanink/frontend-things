@@ -1,2 +1,2 @@
 
-[minimal jquery tabs - jsfiddle](https://jsfiddle.net/2wtqskb1/)
+[minimal jquery tabs - jsfiddle](https://jsfiddle.net/t6pnynsn/)
