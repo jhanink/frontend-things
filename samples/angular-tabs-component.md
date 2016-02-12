@@ -1,1 +1,1 @@
-[angular tabs component - jsfiddle](https://jsfiddle.net/Lt62kr4m/embedded/html,js,css,result/dark/)
+[angular tabs component - jsfiddle](https://jsfiddle.net/fz6fa21a/embedded/html,js,css,result/dark/)
