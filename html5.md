@@ -2,6 +2,22 @@
 
 See [MDN - HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
+## `highlights`
+
+* new elements, attributes, and behaviors
+* a larger set of technologies -> _HTML5 & friends_ -> _HTML5_
+
+* `semantics`
+  * `<section>`, `<article>`, `<nav>`, `<header>`, `<footer>` 
+  * 
+* `connectivity`
+
+* `offline and storage`
+* `multimedia`
+* `2D/3D graphics and effects`
+* `device access`
+* `styling`
+
 ## `semantics`
 
 * `<section>`, `<article>`, `<nav>`, `<header>`, `<footer>`
