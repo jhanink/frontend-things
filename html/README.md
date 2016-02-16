@@ -9,13 +9,16 @@ See [MDN - HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 ### Semantics
 
-Semantic HTML tags provide document structure with contextual meaning.
+Semantic HTML tags can indicate structure for document outlining or be typed elements that have specific meaning.
 
 * Sections and outlines `<section> <article> <nav> <header> <footer>` 
 * Audio and video `<audio> <video>` 
+  * [video.js open source library](http://videojs.com/)
 * Forms `<input> <output>`
 * New elements `<figcaption> <data> <time> <output> <progress> <meter> <main>`
 * MathML
+* Misc..
+  * `<datalist id="browsers"><option value="Chrome"></datalist><input type="text" list="browsers"/>`
 
 ### Connectivity
 * Web Sockets

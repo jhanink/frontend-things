@@ -1,24 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
 
 <style type="text/css">
-  .large-box {
+  .large-box, .section {
      width: 500px;
-     height: 200px;
-     border: 1px solid gray;
+     border: 1px solid silver;
+     padding:10px;
+     border-radius: 5px;
   }
+
+  .indent {
+    margin-left:30px;
+  }
+
   video {
     width: 400px;
   }
 </style>
-
+</head>
 <section class="topics">
 
-  <h2>contentEditable</h2>
+  <h1>contentEditable</h1>
   <div class="large-box" contentEditable="true">
   </div>
 
-  <h2>Embedding html5 video</h2>
-  <video src="https://dl.dropboxusercontent.com/u/363598/webserver/vids/water-sports.mov" controls Xautoplay Xpreload=auto>
+  <h1>html5 tags</h1>
+  <div class="indent">
+  &lt;progress value="70" max="100"&gt;70 %&lt;/progress&gt;
+  <br/>
+  <progress value="70" max="100">70 %</progress>
+  <br/>
+  <br/>
+  &lt;meter low="69" high="80" max="100" value="84"&gt;B&lt;/meter&gt;
+  <br/>He got a <meter low="69" high="80" max="100" value="84">B</meter> on the exam.
+  <br/>Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.
+  </div>
+
+
+  <h1>iframes</h1>
+  <div class="section" class="indent">
+  </div>
+
+  <h1>Forms</h1>
+  <div class="section" class="indent">
+    <form action="javascript:void(0);">
+      type tel <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" .autofocus/><br/>
+      type email <input type="email" placeholder="email"/><br/>
+      <!-- type color <input type="color" /><br/> -->
+      type date <input type="datetime" pattern="date" /><br/>
+      <label>type range: <input type="range" id="rId"/></label><output for="rId"></output><br/>
+      <label>First name: <input type="text" required /></label><br/>
+      attr list <input type="text" list="browsers" /><br/>
+      <input type="submit"/></br/>
+    </form>
+  </div>
+
+  <h1>Embedding html5 video</h1>
+  <input type="button" value="Load" onclick="javascript:initVid();"/>
+  <input type="button" value="Play" onclick="javascript:playVid()"/>
+  <input type="button" value="Stop" onclick="javascript:stopVid()"/>
+  <br/>
+  <video id="vid" controls Xautoplay Xpreload=auto>
     Your browser does not support the <code>video</code> element.
-  </video>
+  </video> 
 
 </section>
+
+<datalist id="browsers">
+  <option value="Chrome"/> 
+  <option value="Firefox"/> 
+  <option value="Internet Explorer"/> 
+  <option value="Safari"/> 
+  <option value="Opera"/> 
+</datalist>
+
+<div style="height:100px">
+
+</div>
+
+
+<script>
+
+  var initVid = function() {
+    var el = document.getElementById("vid");
+    el.src = "https://dl.dropboxusercontent.com/u/363598/webserver/vids/water-sports.mov#t=0,30";
+  }
+  var playVid = function() {
+    var el = document.getElementById("vid");
+    el.play();
+  }
+
+  var stopVid = function() {
+    var el = document.getElementById("vid");
+    el.pause();
+  }
+
+</script>
