@@ -14,8 +14,7 @@ Semantic HTML tags provide document structure with contextual meaning.
 * Sections and outlines `<section> <article> <nav> <header> <footer>` 
 * Audio and video `<audio> <video>` 
 * Forms `<input> <output>`
-* New elements
-  * `<figcaption> <data> <time> <output> <progress> <meter> <main>`
+* New elements `<figcaption> <data> <time> <output> <progress> <meter> <main>`
 * MathML
 
 ### Connectivity
