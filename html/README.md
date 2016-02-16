@@ -39,6 +39,8 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
     * does not span a new tab or window (unlike cookies)
   * `Window.localStorage`
     * survives the browser session
+  * `localForage` polyfill
+    * https://github.com/mozilla/localForage
 * IndexedDB - store structured, indexed data in the browser
 * File API - access local files
 
