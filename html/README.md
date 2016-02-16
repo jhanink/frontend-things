@@ -47,6 +47,7 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
 ### Multimedia
 * Audio, Video
 * WebRTC - [guide, tutorials, api](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+  * [WebRTC adapter polyfill/shim](https://github.com/webrtc/adapter)
 * Camera API
 
 ### 2D/3D graphics and effects
