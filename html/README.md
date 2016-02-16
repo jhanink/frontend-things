@@ -30,7 +30,8 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
 * WebRTC - realtime communication without plugins
 
 ### Offline and storage
-* Offline resources - application cache
+* Offline resources - [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) 
+  * note: `application cache` has been deprecated
 * Online, offline events - network connection detection
 * client side session and persistent storage
 * IndexedDB - store structured, indexed data in the browser
@@ -55,6 +56,12 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
 
 ### Device access
 
-
 ### Styling
+
+### Other
+* `window.postMessage` - cross-frame/cross-domain messaging
+* `offline/online events`
+  * `window.addEventListener('offline', function(){console.log("you've gone offline")})`
+  * `window.addEventListener('online', function(){console.log("you're back online")})`
+
 
