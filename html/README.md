@@ -21,7 +21,7 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
   * `<datalist id="browsers"><option value="Chrome"></datalist><input type="text" list="browsers"/>`
   * `<iframe>` [See docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#Attributes) 
     * `<iframe seamless="seamless"></iframe>`
-    * `<iframe sandbox="allow-modals,allow-popups,allow-same-origin"></iframe>`
+    * `<iframe sandbox="allow-modals,allow-popups,allow-popups-to-escape-sandbox,allow-same-origin"></iframe>`
 
 
 ### Connectivity
