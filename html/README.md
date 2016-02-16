@@ -41,12 +41,12 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
     * survives the browser session
   * `localForage` polyfill
     * https://github.com/mozilla/localForage
-* IndexedDB - store structured, indexed data in the browser
+* IndexedDB - low level in browser structured data store
 * File API - access local files
 
 ### Multimedia
 * Audio, Video
-* WebRTC
+* WebRTC - [guide, tutorials, api](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * Camera API
 
 ### 2D/3D graphics and effects
