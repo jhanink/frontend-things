@@ -18,8 +18,32 @@
   video {
     width: 400px;
   }
+
+  #status {
+    font: 14px Helvetica;
+    color: white;
+    padding: 10px 50px;
+    display: inline-block;
+  }
+  .offline {
+    background-color:red;
+  }
+  .online {
+    background-color:green;
+  }
+
+  #sessionValOutput {
+    font: 12px Helvetica;
+    color: orange;
+  }
 </style>
 </head>
+
+<section>
+  <div id="status" class="offline">
+  </div>
+</section>
+
 <section class="topics">
 
   <h1>contentEditable</h1>
@@ -38,6 +62,24 @@
   <br/>Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.
   </div>
 
+  <h1>storage</h1>
+  <h3>session storage</h3>
+  <div>
+    <fieldset class="section indent">
+      <legend>Set session storage</legend>
+      <label> Key: <input type="text" id="sessionKey"/></label><br/>
+      <label> Value: <input type="text" id="sessionVal"/></label><br/>
+      <button onclick="setSessionValues()">Set</button>
+    </fieldset>
+  </div>
+  <div>
+    <fieldset class="section indent">
+      <legend>Get session storage</legend>
+      <label> Key: <input type="text" id="sessionKeyLookup"/></label><br/>
+      <label> Value: <span id="sessionValOutput"></span></label><br/>
+      <button onclick="showSessionValue()">Get</button> 
+    </fieldset>
+  </div>
 
   <h1>iframes</h1>
   <div class="section" class="indent">
@@ -95,6 +137,29 @@
   var stopVid = function() {
     var el = document.getElementById("vid");
     el.pause();
+  }
+
+  var updateStatus = function(event) {
+    var status = document.getElementById("status");
+    statusVal = navigator.onLine?"online":"offline";
+    status.className = statusVal;
+    status.innerText = statusVal.toUpperCase();
+  } 
+
+  window.addEventListener('online', updateStatus);
+  window.addEventListener('offline', updateStatus);
+  updateStatus();
+
+  var setSessionValues = function() {
+    var key = document.getElementById("sessionKey").value;
+    var val = document.getElementById("sessionVal").value;
+    sessionStorage.setItem(key,val);
+  }
+
+  var showSessionValue = function() {
+    var key = document.getElementById("sessionKeyLookup").value;
+    var data = sessionStorage.getItem(key);
+    document.getElementById("sessionValOutput").innerText = data;
   }
 
 </script>

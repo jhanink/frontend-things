@@ -34,6 +34,11 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
   * note: `application cache` has been deprecated
 * Online, offline events - network connection detection
 * client side session and persistent storage
+  * `Window.sessionStorage`
+    * ends with the browser session
+    * does not span a new tab or window (unlike cookies)
+  * `Window.localStorage`
+    * survives the browser session
 * IndexedDB - store structured, indexed data in the browser
 * File API - access local files
 
