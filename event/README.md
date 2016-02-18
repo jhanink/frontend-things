@@ -5,3 +5,10 @@
 * does not stop propagation
 * prevent a checkbox from being toggled on click
    `checkbox.addEventListener('click', function (e) {e.preventDefault();})`
+
+
+
+
+
+## `jsbin`
+* [preventDefault](http://jsbin.com/zegipo/edit?html,js,console,output)
