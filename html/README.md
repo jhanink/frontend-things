@@ -61,6 +61,8 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
 * Web Workers
 * XMLHttpRequest - level 2
 * History API - manipulate browser history
+* Fullscreen API
+* Drag and drop
 * `contentEditable` attribute
 
 ### Device access
