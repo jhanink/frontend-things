@@ -13,3 +13,7 @@
 ## `shadows`
 
 ## `animations`
+
+## `extras`
+* autosize columns to the height of the content with the tallest content
+  * [See jsbin example](http://jsbin.com/kojala/edit?html,css,output)
