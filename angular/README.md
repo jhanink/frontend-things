@@ -18,3 +18,6 @@
   * `&` expression binding, `c({num: 4})`
 
 ## `router`
+
+## `extras`
+* [Angular styleguide - john papa](https://github.com/johnpapa/angular-styleguide)
