@@ -10,5 +10,11 @@
 ## `modules`
 
 ## `directives`
+* attribute values on isolated scope
+  * `<div my-directive a="a" b="{{b}}" c="function(num) {return num+1}"></div>`
+  * `scope: {a: "=", b: "@"}`
+  * `=` scope-to-scope binding (reference)
+  * `@` evaluated result (value)
+  * `&` expression binding, `c({num: 4})`
 
 ## `router`
