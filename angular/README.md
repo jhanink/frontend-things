@@ -18,7 +18,6 @@
   * [see plunkr](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
 * transclusion
 
-
 ## `modules`
 
 ## `router`
