@@ -10,11 +10,11 @@
 
 ## `directives`
 * attribute values on isolated scope
-  * `<div my-directive a="a" b="{{b}}" c="function(num) {return num+1}"></div>`
+  * `<div my-directive a="a" b="{{b}}" c="add(n)"></div>`
   * `scope: {a: "=", b: "@", c: "&"}`
   * `=` scope-to-scope binding (reference)
   * `@` evaluated result (value)
-  * `&` expression binding, `c({num: 4})`
+  * `&` expression binding, `add({n: 4})`
   * [see plunkr - expression binding](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
 
 ## `modules`
