@@ -14,8 +14,10 @@
   * `scope: {a: "=", b: "@", c: "&"}`
   * `=` pass a parent-scoped value (can be a reference)
   * `@` pass a literal value expression 
-  * `&` pass a wrapped expression (can be invoked `add({n: 4})`)
-  * [see plunkr - expression binding](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
+  * `&` pass a wrapped expression (expression binding)
+  * [see plunkr](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
+* transclusion
+
 
 ## `modules`
 
