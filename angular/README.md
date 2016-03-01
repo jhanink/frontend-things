@@ -12,9 +12,9 @@
 * attribute values on isolated scope
   * `<div my-directive a="a" b="{{b}}" c="add(n)"></div>`
   * `scope: {a: "=", b: "@", c: "&"}`
-  * `=` scope-to-scope binding (reference)
-  * `@` evaluated result (value)
-  * `&` expression binding, `add({n: 4})`
+  * `=` pass a parent-scoped value (can be a reference)
+  * `@` pass a literal value expression 
+  * `&` pass a wrapped expression (can be invoked `add({n: 4})`)
   * [see plunkr - expression binding](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
 
 ## `modules`
