@@ -7,15 +7,17 @@
   * it is triggered by `$scope.digest()`, which is invoked by `$scope.$apply()`
   * angular directives and `angular` methods will result in a `$scope.$apply()` call
 
-## `modules`
 
 ## `directives`
 * attribute values on isolated scope
   * `<div my-directive a="a" b="{{b}}" c="function(num) {return num+1}"></div>`
-  * `scope: {a: "=", b: "@"}`
+  * `scope: {a: "=", b: "@", c: "&"}`
   * `=` scope-to-scope binding (reference)
   * `@` evaluated result (value)
   * `&` expression binding, `c({num: 4})`
+  * [see plunkr - expression binding](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
+
+## `modules`
 
 ## `router`
 
