@@ -7,7 +7,7 @@
   * it is triggered by `$scope.digest()`, which is invoked by `$scope.$apply()`
   * angular directives and `angular` methods will result in a `$scope.$apply()` call
   * it processes the watch functions and then repeats the dirty checks until there are no changes
-  * if the loop continues more than 10x, the application is killed
+  * the loop is limited to 10 cycles to avoid an infinite loop, after which the application is killed
 
 
 ## `directives`
