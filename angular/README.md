@@ -9,11 +9,13 @@
   * it processes the watch functions and then repeats the dirty checks until there are no changes
   * the loop is limited to 10 cycles to avoid an infinite loop, after which the application is killed
 
-## `change detection`
+## `change detection and digest`
   * angular 1
     * change detection model graph has cycles
+    * digest cycle loops until no more changes (or 10 elapsed cycles)
   * angular 2
     * change detection model is a tree
+    * 1 digest (single cycle) pass only
 
 ## `directives`
 * attribute values on isolated scope
