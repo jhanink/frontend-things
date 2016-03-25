@@ -26,6 +26,7 @@
   * `&` pass a wrapped expression (expression binding)
   * [see plunkr](https://plnkr.co/edit/2H2ecgWleNjP2n76KXdW)
 * transclusion
+  * [example](http://plnkr.co/edit/yFLe7OXj2u8epHXe6a0s?p=preview)
 
 ## `modules`
 
