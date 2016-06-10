@@ -75,4 +75,5 @@ Semantic HTML tags can indicate structure for document outlining or be typed ele
   * `window.addEventListener('offline', function(){console.log("you've gone offline")})`
   * `window.addEventListener('online', function(){console.log("you're back online")})`
 
-
+### Resources
+* [HTML design principles](https://www.w3.org/TR/html-design-principles/)
